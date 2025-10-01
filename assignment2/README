@@ -1,1 +1,11 @@
+1.The three pathfinder files can be functioned to play pygames.
 
+2.The three algorithms have been already finished, and you can write other algorithms.You just need to alter one line in the pathfinder file.
+
+3.How to use pygame on SJTU HPC?
+Firstly, download MobaXterm(if it is tortured to wait, use free download manager).
+Then, create SSH connection to your HPC account.
+After that, ask for computing nodes and simply start X11 by tapping this:salloc -p cpu -N 1 -n 1.
+Finally, you are expected to enter a computing node which is though not eager to open x11(because srun is not compatable with x11, so you have to manually use SSH to open x11), 
+and you can tap ssh -X cas024(which means your node name) to correctly connect to x11. 
+Congratulations! You can show your pygame page on MobaXterm and other similar X servers!
